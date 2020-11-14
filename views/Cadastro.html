@@ -1,19 +1,59 @@
-{% extends "layout.njk" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main_header">
+            <div class="logo">
+                <a href="/"><img src="https://www.inovativabrasil.com.br/wp-content/uploads/2019/02/logo.png"
+                        alt=""></a>
+            </div>
+            <div class="links">
+                <div class="withicon">
+                    <img src="../public/icons/user.png" alt="">
+                    <a href="/Agendamento">Agende com um mentor! </a>
+                </div>
+                <div class="withicon">
+                    <img src="../public/icons/twitter.png" alt="">
+                    <a href="/Students">Empreendedores</a>
+                </div>
+                <div class="withicon">
+                    <img src="../public/icons/flag_outline.png" alt="">
+                    <a href="/Teachers">Mentores</a>
+                </div>
+                <div class="withicon">
+                    <img src="../public/icons/twitters.png" alt="">
+                    <a href="/Login">Login</a>
+                </div>
+                <div class="withicon">
+                    <img src="../public/icons/home_alt_fill.svg" alt="">
+                    <a href="/">Home</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="global_register">
         <div class="main_registre">
             <div class="main_mentor">
                 <div>
                     <p>Vire um Mentor!</p>
                 </div>
-                <a href="/Teachers/create" class="button">Registre-se</a>
+                <a href="./Teachers/create.html" class="button">Registre-se</a>
             </div>
             <div class="main_user">
                 <div>
                     <p>Ache um Mentor!</p>
                 </div>
-                <a href="/Students/create" class="button">Registre-se</a>
+                <a href="./Students/create.html" class="button">Registre-se</a>
             </div>
         </div>
     </div>
-{% endblock %}
+</body>
+
+</html>

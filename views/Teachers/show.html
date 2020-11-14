@@ -1,42 +1,80 @@
-{% extends "layout.njk" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-<div class="card">
-    <section class="avatar" style="background: url({{ teacher.avatar_url }}) no-repeat center center / cover">        
-    </section>
-    <section class="Teacher">
-        <h1>Informações</h1>
-       <div class="info">
-           <div class="item">
-               <div>Nome completo</div>
-               <div>{{ teacher.name }}</div>
-           </div>
-           <div class="item">
-               <div>Idade</div>
-               <div>{{ teacher.age }}</div>
-           </div>
-           <div class="item">
-               <div>Grau de escolaridade</div>
-               <div>{{ teacher.grau }}</div>
-           </div>
-           <div class="item">  
-               <div>Tipo de aula</div>
-               <div>{{ teacher.Tipo }}</div>
-           </div>
-           <div class="item">
-               <div>Acompanhamento</div>
-               <div>
-                   {% for Info in teacher.subjects %}
-                   <span>{{ Info }}</span>
-                   {% endfor %}
-               </div>
-           </div>
-           <div class="item">  
-               <div>Registrado desde</div>
-               <div>{{ teacher.create_at }}</div>
-           </div>
-       </div>
-        <a href="/Teachers/{{teacher.id}}/edit" class="button">Editar</a>
-    </section>
-</div>
-{% endblock content %}
+<head>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <div class="main_header">
+            <div class="logo">
+                <a href="/"><img src="https://www.inovativabrasil.com.br/wp-content/uploads/2019/02/logo.png"
+                        alt=""></a>
+            </div>
+            <div class="links">
+                <div class="withicon">
+                    <img src="../icons/user.png" alt="">
+                    <a href="/Agendamento">Agende com um mentor! </a>
+                </div>
+                <div class="withicon">
+                    <img src="../icons/twitter.png" alt="">
+                    <a href="/Students">Empreendedores</a>
+                </div>
+                <div class="withicon">
+                    <img src="../icons/flag_outline.png" alt="">
+                    <a href="../Teachers">Mentores</a>
+                </div>
+                <div class="withicon">
+                    <img src="icons/twitters.png" alt="">
+                    <a href="../Login">Login</a>
+                </div>
+                <div class="withicon">
+                    <img src="/icons/home_alt_fill.svg" alt="">
+                    <a href="">Home</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="card">
+        <section class="avatar" style="background: url({{teacher.avatar_url}}) no-repeat center center / cover">
+        </section>
+        <section class="Teacher">
+            <h1>Informações</h1>
+            <div class="info">
+                <div class="item">
+                    <div>Nome completo</div>
+                    <div>{{ teacher.name }}</div>
+                </div>
+                <div class="item">
+                    <div>Idade</div>
+                    <div>{{ teacher.age }}</div>
+                </div>
+                <div class="item">
+                    <div>Grau de escolaridade</div>
+                    <div>{{ teacher.grau }}</div>
+                </div>
+                <div class="item">
+                    <div>Tipo de aula</div>
+                    <div>{{ teacher.Tipo }}</div>
+                </div>
+                <div class="item">
+                    <div>Acompanhamento</div>
+                    <div>
+                        {% for Info in teacher.subjects %}
+                        <span>{{ Info }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="item">
+                    <div>Registrado desde</div>
+                    <div>{{ teacher.create_at }}</div>
+                </div>
+            </div>
+            <a href="/Teachers/{{teacher.id}}/edit" class="button">Editar</a>
+        </section>
+    </div>
+</body>
+</html>

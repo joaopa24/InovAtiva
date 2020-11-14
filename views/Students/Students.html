@@ -1,6 +1,42 @@
-{% extends "layout.njk" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
+<head>
+  <title>Home</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+  <header>
+    <div class="main_header">
+      <div class="logo">
+        <a href="/"><img src="https://www.inovativabrasil.com.br/wp-content/uploads/2019/02/logo.png" alt=""></a>
+      </div>
+      <div class="links">
+        <div class="withicon">
+          <img src="../icons/user.png" alt="">
+          <a href="/Agendamento">Agende com um mentor! </a>
+        </div>
+        <div class="withicon">
+          <img src="../icons/twitter.png" alt="">
+          <a href="/Students">Empreendedores</a>
+        </div>
+        <div class="withicon">
+          <img src="../icons/flag_outline.png" alt="">
+          <a href="../Teachers">Mentores</a>
+        </div>
+        <div class="withicon">
+          <img src="icons/twitters.png" alt="">
+          <a href="../Login">Login</a>
+        </div>
+        <div class="withicon">
+          <img src="/icons/home_alt_fill.svg" alt="">
+          <a href="">Home</a>
+        </div>
+      </div>
+    </div>
+  </header>
   <div class="card table-container">
     <table>
       <thead>
@@ -13,28 +49,30 @@
       </thead>
       <tbody>
         {% for student in students %}
-          <tr>
-            <td>
-              <span style="background-image: url({{ student.avatar_url }})"></span>
-              {{ student.name }}
-            </td>
-            <td>{{ student.email }}</td>
-            <td>
-              {% if student.Ano == "5EF" %}5º Ano do Ensino Fundamental{% endif %}
-              {% if student.Ano == "6EF" %}6º Ano do Ensino Fundamental{% endif %}
-              {% if student.Ano == "7EF" %}7º Ano do Ensino Fundamental{% endif %}
-              {% if student.Ano == "8EF" %}8º Ano do Ensino Fundamental{% endif %}
-              {% if student.Ano == "9EF" %}9º Ano do Ensino Fundamental{% endif %}
-              {% if student.Ano == "1EM" %}1º Ano do Ensino Médio{% endif %}
-              {% if student.Ano == "2EM" %}2º Ano do Ensino Médio{% endif %}
-              {% if student.Ano == "3EM" %}3º Ano do Ensino Médio{% endif %}
-            </td>
-            <td>
-              <a href="/Students/{{student.id}}">Ver</a>
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <span style="background-image: url({{student.avatar_url}})"></span>
+            {{ student.name }}
+          </td>
+          <td>{{ student.email }}</td>
+          <td>
+            {% if student.Ano == "5EF" %}5º Ano do Ensino Fundamental{% endif %}
+            {% if student.Ano == "6EF" %}6º Ano do Ensino Fundamental{% endif %}
+            {% if student.Ano == "7EF" %}7º Ano do Ensino Fundamental{% endif %}
+            {% if student.Ano == "8EF" %}8º Ano do Ensino Fundamental{% endif %}
+            {% if student.Ano == "9EF" %}9º Ano do Ensino Fundamental{% endif %}
+            {% if student.Ano == "1EM" %}1º Ano do Ensino Médio{% endif %}
+            {% if student.Ano == "2EM" %}2º Ano do Ensino Médio{% endif %}
+            {% if student.Ano == "3EM" %}3º Ano do Ensino Médio{% endif %}
+          </td>
+          <td>
+            <a href="/Students/{{student.id}}">Ver</a>
+          </td>
+        </tr>
         {% endfor %}
       </tbody>
     </table>
   </div>
-{% endblock content %}
+</body>
+
+</html>
