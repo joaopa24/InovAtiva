@@ -25,6 +25,7 @@ body {
     font-family: 'Balsamiq Sans', cursive;
     display: flex;
     justify-content: center;
+    animation:Look 500ms ease-out;
 }
 header {
     background-color: var(--color-text);
@@ -33,11 +34,16 @@ header {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    height: 80px;
     
+}
+.logo{
+    display: flex;
+    justify-content: center;
 }
 .logo img{
     height: 60px;
-    padding:10px 0px
+    
 }
 .main_header{
     display: flex;
@@ -75,7 +81,7 @@ header {
     animation:Look 500ms ease-out;
     width: 100vw;
     background: var(--back);
-    height: 88vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
 }
@@ -119,6 +125,7 @@ header {
     color: var(--green);
     font-family: 'Balsamiq Sans', cursive;
     background:var(--back);
+    outline: none;
 }
 .content_home button:hover{
     transition: 500ms;
@@ -140,7 +147,7 @@ header {
 /* Login */
 .global_login{
     width: 100vw;
-    height: 88vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,8 +162,8 @@ header {
     background-size: cover;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 0px 1px 6px 2px var(--color-text);
-    animation:Look 500ms ease-out;
+    box-shadow: -1px -1px 3px 1px var(--color-text);
+    animation:Look 700ms ease-out;
 }
 .overlay_login{
     position: relative;
@@ -177,7 +184,7 @@ header {
     }
  }
 .login{
-    animation:Look 500ms ease-out;
+    animation:Look 700ms ease-out;
     box-sizing: border-box;
     padding: 50px;
     position: absolute;
@@ -189,7 +196,7 @@ header {
     min-width: 200px;
     width: 400px;
     height: 400px;
-    box-shadow: 2px 2px 2px 4px var(--color-text);
+    border: 1px solid var(--color-text);
     border-radius: 10px;
 }
 .login p{
@@ -230,4 +237,58 @@ header {
     outline: none;
     font-family: 'Balsamiq Sans', cursive;
 
+}
+/* Register */
+
+/* Course */
+.global_course{
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    margin-bottom: 400px;
+    
+    
+}
+.course{
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.title_course p{
+    font-family: 'Balsamiq Sans', cursive;
+    display: flex;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: 64px;
+    margin: 40px;
+}
+.cards{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.proceed{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.proceed button{
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 200px;
+    border-radius: 200px;
+    font-size: 28px;
+    border: 2px solid var(--green);
+    color: var(--green);
+    font-family: 'Balsamiq Sans', cursive;
+    background:var(--back);
+    outline: none;
+}
+.proceed button:hover{
+    transition: 500ms;
+    background: var(--green);
+    color: var(--back);
 }
