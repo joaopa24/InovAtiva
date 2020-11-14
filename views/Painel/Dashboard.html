@@ -27,17 +27,61 @@
           <a href="../Teachers">Mentores</a>
         </div>
         <div class="withicon">
-          <img src="icons/twitters.png" alt="">
+          <img src="../icons/twitters.png" alt="">
           <a href="../Login">Login</a>
         </div>
         <div class="withicon">
-          <img src="/icons/home_alt_fill.svg" alt="">
+          <img src="../icons/home_alt_fill.svg" alt="">
           <a href="">Home</a>
         </div>
       </div>
     </div>
   </header>
-  
+  <div class="global_dashboard">
+      <div class="main_dashboard">
+          <div class="menu_dashboard">
+               <p>lol</p>
+          </div>
+          <div class="content_dashboard">
+               <canvas class="line-chart">lol</canvas>
+          </div>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>">
+  <script>
+    window.onload = function() {
+    var ctx = document.getElementsByClassName("line-chart")
+    
+    var ChartGraph = new Chart(ctx,{
+        type:"line",
+        type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 50, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    });
+  }
+  </script>
 </body>
 
 </html>

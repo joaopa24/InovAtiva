@@ -457,3 +457,31 @@ tbody tr td:last-child a,
 .table-container thead tr th:last-child,td:last-child{
     text-align: center;
 }
+
+/* Painel */
+.global_dashboard{
+    
+    width: 100vw;
+    height: 90vh;
+}
+.main_dashboard{
+    position: relative;
+    
+    display: flex;
+    box-sizing: border-box;
+    margin: 20px;
+    
+}
+.content_dashboard{
+    display: flex;
+    justify-content: start;
+}
+.menu_dashboard{
+    width: 200px;
+    height: 80vh;
+    
+}
+.line-chart{
+    width: 500px;
+    height: 500px;
+}
