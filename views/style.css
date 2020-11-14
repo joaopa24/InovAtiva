@@ -29,6 +29,9 @@ header {
     justify-content: center;
     
 }
+.logo img{
+    height: 80px;
+}
 .main_header{
     display: flex;
     justify-content: space-between;
