@@ -498,7 +498,7 @@ header {
 .tabs_profile a::after{
     content: "";
     width: 0%;
-    height:2px;
+    height:3px;
     background-color:var(--green);
     position: absolute;
     left: 0;
@@ -581,7 +581,6 @@ header {
     box-sizing: border-box;
     display: flex;
     margin-bottom: 20px;
-    
 }
 .comment_img img{
     width: 80px;
@@ -593,5 +592,75 @@ header {
     font-size: 18px;
     font-family: 'Balsamiq Sans', cursive;
     text-align: justify;
+    color: var(--back);
+}
+
+.search_mentor{
+    margin-top: 5px;
+    animation:Look 1000ms ease-out;
+    display: flex;
+    gap: 2px;
+    background: var(--color-text);
+    padding: 20px;
+    border-radius: 20px;
+}
+.search_mentor input{
+    width: 90%;
+    height: 10px;
+    background: var(--backblack);
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    border: 2px solid var(--back);
+    color: var(--back);
+}
+.search_mentor select{
+    border-radius: 10px;
+    background: var(--backblack);
+    height: 35px;
+    outline: none;
+    border: 2px solid var(--back);
+    color: var(--back);
+    
+}
+.search_mentor option{
+    color: var(--back);
+}
+
+.mentors{
+    width: 100%;
+    animation:Look 1000ms ease-out;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: var(--color-text);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.title_mentor p{
+    font-size: 28px;
+    color: var(--back);
+    
+    font-family: 'Balsamiq Sans', cursive;
+    border-bottom: 2px solid var(--color-text);
+}
+.result_mentor{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--back);
+}
+.result_mentor:last-child{
+    border-bottom: none;
+}
+.mentor_img img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.results_mentor_info{
+    font-family: 'Balsamiq Sans', cursive;
+    box-sizing: border-box;
+    margin-left: 10px;
     color: var(--back);
 }
