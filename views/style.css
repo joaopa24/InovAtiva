@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 :root {
     --color-primary: #e7fc2b;
@@ -24,7 +25,7 @@ body {
     background: var(--color-text);
     color: var(--back);
     padding: 20px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     animation:Look 500ms ease-out;
@@ -63,7 +64,7 @@ header {
     text-decoration: none;
     color: var(--back);
     position: relative;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     border-radius: 40%;
 }
 .links a::after{
@@ -97,8 +98,8 @@ header {
     display: flex;
     width: 50vw;
     box-sizing: border-box;
-    padding-left: 500px;
-    padding-bottom: 200px;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
 .image_home{
@@ -113,10 +114,11 @@ header {
     width: 600px;
     text-align: justify;
     padding-bottom: 40px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     color: var(--color-text);
     font-size: 32px;
 }
+
 .content_home button{
     box-sizing: border-box;
     padding: 20px;
@@ -125,7 +127,7 @@ header {
     font-size: 28px;
     border: 2px solid var(--green);
     color: var(--green);
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     background:var(--back);
     outline: none;
 }
@@ -137,7 +139,7 @@ header {
 .title_home p{
     color:var(--green);
     font-size: 90px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     margin-bottom: 40px;
 }
@@ -159,23 +161,12 @@ header {
     width: 70vw;
     display: flex;
     justify-content: center;
-    height: 80vh;
-    background: url("https://cdn.pixabay.com/photo/2016/06/13/05/47/background-1453697_960_720.jpg");
-    background-size: cover;
+    height: 90vh;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: -1px -1px 3px 1px var(--color-text);
     animation:Look 700ms ease-out;
 }
-.overlay_login{
-    position: relative;
-    border-radius: 20px;
-    width: 95vw;
-    height: 100%;
-    background:#014d50b3;
 
-
-}
 @keyframes Look{
     0%{
         opacity: 0;
@@ -199,12 +190,12 @@ header {
     width: 400px;
     height: 400px;
     border: 1px solid var(--color-text);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .login p{
     color:var(--green);
     font-size: 48px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
  
 }
 .fields {
@@ -222,10 +213,10 @@ header {
     position: relative;
     background: var(--back);
     padding: 15px;
-    border-radius: 40px;
+    border-radius: 10px;
     outline: none;
     width: 100%;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
 
     
     
@@ -234,10 +225,10 @@ header {
     margin-top: 30px;
     background: var(--back);
     padding: 15px;
-    border-radius: 40px;
+    border-radius: 10px;
     width:100% ;
     outline: none;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
 
 }
 /* Register */
@@ -259,7 +250,7 @@ header {
     
 }
 .title_course p{
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     color: var(--color-text);
@@ -284,16 +275,16 @@ header {
     width: 200px;
     border-radius: 200px;
     font-size: 28px;
-    border: 1px solid var(--color-text);
-    color: var(--color-text);
-    font-family: 'Balsamiq Sans', cursive;
-    background:var(--color-primary);
+    border: 1px solid var(--green);
+    color: var(--green);
+    font-family: 'Roboto', sans-serif;
+    background:var(--back);
     outline: none;
 }
 .proceed button:hover{
     transition: 500ms;
-    background: var(--color-text);
-    color: var(--color-primary);
+    background: var(--green);
+    color: var(--back);
 }
 /* tasks */
 .global_tasks{
@@ -324,6 +315,7 @@ header {
     width: 100%;
     outline: none;
     padding: 10px;
+    color: var(--back);
     border-radius: 5px;
     background: var(--color-text);
 }
@@ -339,7 +331,7 @@ header {
 .search_block p{
     color: var(--back);
     font-size: 24px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     border-bottom: 2px solid var(--back);
     margin-bottom: 20px;
 }
@@ -362,7 +354,7 @@ header {
 .results_title p{
     box-sizing: border-box;
     font-size: 18px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     margin: 20px;
     margin-bottom: 0px;
     color: var(--back);
@@ -392,7 +384,7 @@ header {
     
 }
 .task_description p{
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-bottom:6px;
     color: var(--back);
@@ -400,7 +392,7 @@ header {
 .task_description a{
     text-decoration: none;
     color: var(--green);
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 .results_tasks .task:last-child{
     border-bottom: none;
@@ -426,8 +418,7 @@ header {
     padding-top:60px;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px 2px var(--color-text);
+    border-radius: 10px;
     animation:Look 1200ms ease-out;
 }
 
@@ -446,7 +437,7 @@ header {
     margin-top: 20px;
     font-size: 32px;
     color: var(--back);
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .seeprofile button{
@@ -491,7 +482,7 @@ header {
     text-decoration: none;
     color: var(--color-text);
     position: relative;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     border-radius: 40%;
     font-size: 20px;
 }
@@ -515,47 +506,45 @@ header {
 }
 .Votes{
     animation:Look 800ms ease-out;
-    border-radius:20px;
+    border-radius:10px;
     background: var(--backblack);
     margin: 10px;
     box-sizing: border-box;
     padding: 20px;
-    box-shadow: 1px 1px 1px 1px var(--color-text);
 }
 .votes_title p{
     font-size: 24px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     color: var(--back);
 }
 .votes_item{
     display: flex;
     padding: 6px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     color: var(--back);
 }
 .chart_description{
     animation:Look 900ms ease-out;
-    border-radius:20px;
+    border-radius:10px;
     box-sizing: border-box;
     margin: 10px;
     padding: 20px;
     background: var(--backblack);
-    box-shadow: 1px 1px 1px 1px var(--color-text);
     
 }
 .title_description p{
     font-size: 24px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     color: var(--back);
 }
 .description_text p{
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     text-align: justify;
     padding: 6px;
     color: var(--back);
 }
 .comments{
-    animation:Look 600ms ease-out;
+    animation:Look 900ms ease-out;
     margin-top: 20px;
     width: 100%;
     background: gray;
@@ -563,7 +552,7 @@ header {
     box-sizing: border-box;
     border-radius: 10px;
     background: var(--backblack);
-    box-shadow: 1px 1px 1px 1px var(--color-text);
+
 }
 .comments_display{
     margin: 20px;
@@ -573,7 +562,7 @@ header {
     margin-top: 10px;
     margin-left:20px;
     font-size: 24px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     color: var(--back);
 }
 .comment{
@@ -590,7 +579,7 @@ header {
 }
 .comment_description p{
     font-size: 18px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     text-align: justify;
     color: var(--back);
 }
@@ -602,20 +591,20 @@ header {
     gap: 2px;
     background: var(--color-text);
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .search_mentor input,.search_ranking input{
     width: 90%;
     height: 10px;
     background: var(--backblack);
-    border-radius: 10px;
+    border-radius: 5px;
     outline: none;
     padding: 10px;
     border: 2px solid var(--back);
     color: var(--back);
 }
 .search_mentor select,.search_ranking select{
-    border-radius: 10px;
+    border-radius: 5px;
     background: var(--backblack);
     height: 35px;
     outline: none;
@@ -631,7 +620,7 @@ header {
     width: 100%;
     animation:Look 1000ms ease-out;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     background: var(--color-text);
     box-sizing: border-box;
     padding: 20px;
@@ -640,7 +629,7 @@ header {
 .title_ranking p{
     font-size: 28px;
     color: var(--back);
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     border-bottom: 2px solid var(--color-text);
 }
 .result_mentor,
@@ -661,7 +650,7 @@ header {
     border-radius: 50%;
 }
 .results_mentor_info,.results_ranking_info{
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     margin-left: 10px;
     color: var(--back);
