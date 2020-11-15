@@ -3,6 +3,7 @@
 :root {
     --color-primary: #e7fc2b;
     --color-text:#00011d;
+    --backblack:#00011dde;
     --green:#00a2a8;
     --back:#f2f2f2ec;
 }
@@ -19,6 +20,7 @@ body {
 }
 .footer{
     width: 100vw;
+    position: relative;
     background: var(--color-text);
     color: var(--back);
     padding: 20px;
@@ -402,4 +404,194 @@ header {
 }
 .results_tasks .task:last-child{
     border-bottom: none;
+}
+/* Profile */
+.global_profile{
+    margin-top: 20px;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.main_profile{
+    width: 1200px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 300px 1fr;
+    margin-bottom: 40px;
+}
+.block_profile{
+    background: var(--green);
+    box-sizing: border-box;
+    padding-top:60px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 2px var(--color-text);
+    animation:Look 1200ms ease-out;
+}
+
+.profile_image img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;   
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+.profile_name p{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    color: var(--back);
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.seeprofile button{
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 100px;
+}
+.iconcontact img{
+    width:50px;
+    height: 50px;
+}
+.icons_profile{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.icons_center{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_profile{
+    border-radius: 20px;
+}
+.tabs_profile{
+    animation:Look 1100ms ease-out;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    margin-left: 30px;
+    margin-top: 5px;
+    
+}
+.tabs_profile a{
+    margin-right:60px;
+    text-decoration: none;
+    color: var(--color-text);
+    position: relative;
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 40%;
+    font-size: 20px;
+}
+.tabs_profile a::after{
+    content: "";
+    width: 0%;
+    height:2px;
+    background-color:var(--green);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+.tabs_profile a:hover::after{
+    width: 100%;
+    transition: 250ms ease-out;
+}
+.chards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+.Votes{
+    animation:Look 800ms ease-out;
+    border-radius:20px;
+    background: var(--backblack);
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 1px var(--color-text);
+}
+.votes_title p{
+    font-size: 24px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: var(--back);
+}
+.votes_item{
+    display: flex;
+    padding: 6px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: var(--back);
+}
+.chart_description{
+    animation:Look 900ms ease-out;
+    border-radius:20px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    background: var(--backblack);
+    box-shadow: 1px 1px 1px 1px var(--color-text);
+    
+}
+.title_description p{
+    font-size: 24px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: var(--back);
+}
+.description_text p{
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: justify;
+    padding: 6px;
+    color: var(--back);
+}
+.comments{
+    animation:Look 600ms ease-out;
+    margin-top: 20px;
+    width: 100%;
+    background: gray;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: var(--backblack);
+    box-shadow: 1px 1px 1px 1px var(--color-text);
+}
+.comments_display{
+    margin: 20px;
+    
+}
+.commets_title{
+    margin-top: 10px;
+    margin-left:20px;
+    font-size: 24px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: var(--back);
+}
+.comment{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.comment_img img{
+    width: 80px;
+    height: 80px;
+    margin-right:10px;
+    border-radius: 50%;
+}
+.comment_description p{
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: justify;
+    color: var(--back);
 }
