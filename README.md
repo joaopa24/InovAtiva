@@ -7,8 +7,8 @@
 </p>
 
 ## 💻 Sobre o projeto e Como Executar:
-A inovAtiva foi um projeto elaborado durante o hackathon da Mega Hack 5.0, eu fiquei responsável pela parte do front-end da nossa plataforma de ensino concentrada em gamificação.
-Para Executar o projeto é so abrir os arquivos html :D, ou usar live server do Vscode
+A inovAtiva foi um projeto elaborado durante o hackathon da Mega Hack 5.0, eu fiquei responsável pela parte do front-end da nossa plataforma de ensino concentrada em gamificação.<br>
+Para Executar o projeto é so abrir os arquivos html 😃, ou usar live server do Vscode
 
 ## 🚀 Tecnologias Usadas:
 
