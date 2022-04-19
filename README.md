@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="views/img/logo.PNG">
+  <img src="views/img/logo.png">
 </p>
 
 ## 💻 Sobre o projeto e Como Executar:
