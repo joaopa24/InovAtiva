@@ -16,4 +16,5 @@ A inovAtiva foi um projeto elaborado durante o hackathon da Mega Hack 5.0, eu fi
 
  ## ℹ️ Resultados:
  
-  ![tela1](views/img/telas.gif)
+![tela1](views/img/Tela.png)
+![tela1](views/img/telas.gif)
